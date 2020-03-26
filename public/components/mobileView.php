@@ -3,7 +3,7 @@ function mobileView($params){
     
     //echo __DIR__;
     include('../public/components/smp_navbar.html');
-    include('../public/components/smp_sidenav.html');
+    include('../public/components/sidenav.php');
     include('../public/view/home.view.php');
     ?>
     <div class="fixed-action-btn" style="height:110px; bottom: 10px; right: 10px;">

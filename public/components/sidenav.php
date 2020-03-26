@@ -42,7 +42,7 @@
     </div>
     <!--/. Sidebar navigation -->
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar blue text-white double-nav">
+    <nav class="web navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar blue text-white double-nav">
       <!-- SideNav slide-out button -->
       <div class="float-left">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
@@ -96,7 +96,13 @@ $(document).ready(function() {
 </script>
 
 <style>
-
+  html[device="mobile"] #slide-out{
+    z-index: 999999;
+    }
+    html[device="mobile"] .web{
+      display:none;
+      opacity: 0;
+    }
     .navbar-nav{
     display:flex;
     flex-direction: row;
