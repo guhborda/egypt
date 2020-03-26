@@ -14,11 +14,21 @@
   </div>
 </div>
 
-<style>.loading-overlay{
+<style>
+.loading-overlay{
+  z-index: 9999;
+    opacity: 0;
+    display: none;
     position: absolute;
-    background-color: rgba(0, 0,0,0.1);
+    background-color: rgba(0, 0,0,0.6);
     width: 100%;
     height: 100%;
+}
+
+.loading-overlay.Abrir{
+  z-index: 99999999;
+  opacity:1;
+  display: block;
 }
 .preloader-wrapper{
     position: relative;

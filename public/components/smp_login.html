@@ -1,6 +1,4 @@
-<!-- Grid container -->
 <style>
-    
 #loginpage{
     height: 100%;
     background-color: #333;
@@ -42,6 +40,7 @@
     height: 100%;
 }
 </style>
+<!-- Grid container -->
 <div class="container" id="loginpage">
 
     <!--Grid row-->
@@ -69,7 +68,7 @@
             <a href="">Forgot password?</a>
     
             <!-- Sign in button -->
-            <button class="btn btn-outline-white btn-rounded btn-block waves-effect my-4 waves-light z-depth-0" type="submit">Sign
+            <button class="btn btn-outline-white btn-rounded btn-block waves-effect my-4 waves-light z-depth-0 loadingcontent" type="submit">Sign
               in</button>
     
             <!-- Sign in button -->
@@ -113,7 +112,10 @@ $('#boxform').submit(function(e){
             data:{username:email,password:password,form:'logar'},
             url:'functions/Login.func.php',
             beforeSend: function(){
-              console.log('loading');
+              $('.loading-overlay').addClass('Abrir');
+              sleep(1500).then(()=>{
+                $('.loading-overlay').removeClass('Abrir');
+              });
             },
             success: function(response){
               if(response.success == true){
@@ -122,14 +124,11 @@ $('#boxform').submit(function(e){
 							}else{
 								$('.username, .senha').css({'border': '1px solid #00b388'});
 									$('.face.front #email, .face.front #senha').css({'border': '1px solid red'});
-									$('.username .input-group-addon,.senha .input-group-addon').css({'color': 'red'});
-								sleep(0).then(()=>{
-									$('.loading').html('<div class="alert alert-danger"> Usuário ou senha incorretos</div>');
-								});
-								sleep(1500).then(() => {
-									$('.loading').html('LOGIN');
-								});
-								
+                  $('.username .input-group-addon,.senha .input-group-addon').css({'color': 'red'});
+                  
+                $('.modal-body p').html('Usuário ou Senha incorreto');
+                sleep(1500).then(()=>{
+                $('#frameModalBottom').modal();});
 							}
             }
           });

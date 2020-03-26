@@ -22,6 +22,8 @@
     //     //echo __DIR__;
     //     include('public/view/home.view.php');
     // }
+    include './public/components/modal.html';
+    include './public/components/loading.html';
      ?>
         </div>
     </div>
@@ -62,14 +64,19 @@
                                 Painel:{url:friendlyurl}
                             },
                             beforeSend: function(){
-                                $("#rootApp").load('public/components/loading.html');
+                           
+                                
+                                $('.loading-overlay').addClass('Abrir');
+                            
+                              
                             },
                             success: function(response){
                                 
-                                
+                                $('.loading-overlay').removeClass('Abrir');
                                 
                                 //console.log(response);
                                 if(response != false){
+                                    
                                     <?php
                                        if(isset($_SESSION['user'])){
                                     ?>

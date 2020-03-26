@@ -134,6 +134,10 @@ top: 0;">
             data:{username:email,password:password,form:'logar'},
             url:'functions/Login.func.php',
             beforeSend: function(){
+              $('loading-overlay').addClass('Abrir');
+              sleep(500).then(()=>{
+                $('loading-overlay').removeClass('Abrir');
+              });
               console.log('loading');
             },
             success: function(response){
@@ -143,12 +147,8 @@ top: 0;">
 								$('.username, .senha').css({'border': '1px solid #00b388'});
 									$('.face.front #email, .face.front #senha').css({'border': '1px solid red'});
 									$('.username .input-group-addon,.senha .input-group-addon').css({'color': 'red'});
-								sleep(0).then(()=>{
-									$('.loading').html('<div class="alert alert-danger"> Usuário ou senha incorretos</div>');
-								});
-								sleep(1500).then(() => {
-									$('.loading').html('LOGIN');
-								});
+                  $('.modal-body p').html('Usuário ou Senha incorreto');
+                $('#frameModalBottom').modal();
 								
 							}
             }
