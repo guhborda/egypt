@@ -1,0 +1,15 @@
+.dropdown-menu#topnav {
+    left: unset;
+    position: absolute;
+    float: right;
+    right: 0;
+}
+
+html[device="mobile"] .navbar{
+    top: -1px;
+    
+}
+
+html[device="pc"] .app{
+    margin-top: 85px;
+}

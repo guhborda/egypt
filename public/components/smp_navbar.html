@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-dark grey lighten-5 d-flex
+    justify-content-between z-depth-1-bottom animated slideInDown">
+
+    <div style="height: 100%;">
+        <ul class="list-inline my-2 py-1 dark-grey-text">
+
+            <a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse waves-effect waves-light" style="height:30px">
+                <li class="list-inline-item">
+
+                    <i class="fas fa-bars" aria-hidden="true" style="
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        left: 50%;
+                    "></i>
+
+                </li>
+            </a>
+
+
+
+            <li class="list-inline-item font-weight-bold text-uppercase">
+                weather
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="list-inline my-2 py-1 dark-grey-text">
+            <li class="list-inline-item">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </li>
+            <li class="list-inline-item nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true"><i class="fas fa-ellipsis-v pl-3" aria-hidden="true"></i></a>
+
+                <div class="dropdown-menu dropdown-primary" id="topnav" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="sair">Sair</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<script>
+    $(document).ready(function() {
+        $('.navbar').css('position', 'fixed');
+        $('.navbar').css('z-index', '9999');
+        $('.navbar').css('width', '100%');
+        $('.navbar').css('left', '0');
+        $('#homecard').css('position', 'relative');
+        $('#homecard').css('top', '68px');
+
+
+        $('.container').css('padding', '0');
+        $('.MASTER_SECTION').css('padding:', '0');
+
+        // $(document).on('scroll', function() {
+
+
+        // });
+
+
+
+    });
+</script>

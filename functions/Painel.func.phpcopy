@@ -1,0 +1,11 @@
+<?php
+namespace functions;
+use model\Conexao;
+switch($_REQUEST['Painel']){
+    case 'Index':
+        $con = new Conexao;
+        echo 'estou index';
+    break;
+}
+
+?>
