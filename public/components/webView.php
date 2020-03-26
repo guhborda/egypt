@@ -7,6 +7,7 @@ function webView($params){
    <script>
     $(document).ready(function(){
         $('body').attr('device','webview');
+        $('#rootContent').load('public/view/<?=ucfirst($params)?>/<?=$params?>.view.php');
       //console.log('working');
     });
     

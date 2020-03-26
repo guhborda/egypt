@@ -33,8 +33,9 @@
         <!-- Side navigation links -->
         <li>
           <ul class="collapsible collapsible-accordion">
-            <li><a href="home" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Submit
-                blog</a>
+            <li><a href="home" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Dashboard</a>
+            </li>
+            <li><a href="cadastro" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Cadastrar</a>
             </li>
         <!--/. Side navigation links -->
       </ul>

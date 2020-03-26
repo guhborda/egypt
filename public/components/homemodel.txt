@@ -1,0 +1,50 @@
+grid cotação exemplo
+
+<div class="container">
+  <div class="flex home">
+    <div class="col-item col-md-3 col-12">
+      <div class="tag">Vvar3</div>
+      <div class="variation">+5%</div>
+      <div class="price">R$<div class="cotacao">55,50</div></div>
+      <div class="lucro">+500,00</div>
+    </div>
+</div>
+
+
+
+.flex.home{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  flex-direction:row;
+}
+.col-item{
+  min-height:80px;
+  position:relative;
+  padding:5px;
+  background-color:purple;
+  border-radius:5px;
+  margin:5px;
+}
+.col-item .tag{
+  left:10px;
+  position:absolute; 
+}
+.col-item .variation{
+  position:absolute;
+  right:10px;
+}
+.col-item .price{
+  position:absolute;
+  bottom:10px;
+	left: 10px;
+  display:inline;
+}
+.col-item .cotacao{
+  display:inline;
+}
+.col-item .lucro{
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+}

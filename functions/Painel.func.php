@@ -146,7 +146,7 @@ switch($_POST['Painel']){
          }
     break;
     case 'cadastro':
-        echo 'estou cadastrando :)';
+        die(json_encode($_POST['Params']));
     break;  
      default:
         echo 'opçao nao existe';

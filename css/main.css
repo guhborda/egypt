@@ -22,3 +22,45 @@ html[device="pc"] .app{
     border-radius: 50%;
 
 }
+
+.flex.home{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction:row;
+  }
+  
+  .col-item{
+    min-height:80px;
+    position:relative;
+    padding:5px;
+    background-color:#e5e5e5;
+    border-radius:5px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+    margin:5px;
+  }
+  html[device="mobile"] .col-item{
+    min-height: 100px;
+}
+  .col-item .tag{
+    left:10px;
+    position:absolute; 
+  }
+  .col-item .variation{
+    position:absolute;
+    right:10px;
+  }
+  .col-item .price{
+    position:absolute;
+    bottom:10px;
+      left: 10px;
+    display:inline;
+  }
+  .col-item .cotacao{
+    display:inline;
+  }
+  .col-item .lucro{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+  }

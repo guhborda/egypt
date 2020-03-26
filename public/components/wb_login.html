@@ -135,7 +135,7 @@ top: 0;">
             url:'functions/Login.func.php',
             beforeSend: function(){
               $('loading-overlay').addClass('Abrir');
-              sleep(500).then(()=>{
+              sleep(1500).then(()=>{
                 $('loading-overlay').removeClass('Abrir');
               });
               console.log('loading');
