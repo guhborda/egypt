@@ -70,7 +70,7 @@ html[device="pc"] .app{
   }
   html[device="mobile"] .rootContent{
     margin-top: 100px !important;
-    margin-bottom: -20px !important;
+    margin-bottom: 100px !important;
   }
   html[device="mobile"] .fixed-action-btn{
     position: absolute !important;
