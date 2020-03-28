@@ -37,22 +37,25 @@
                             if(count($url)> 0){
                                 $controllers = $url[0];
                                 //$controllers = implode('/',$url);
-                                $newurl[] = ["$controllers"];
+                                //$newurl[] = ["$controllers"];
                                 if(count($url) >1){
-                                $params = $url[1];
-                                $newurl[] = $params;
+                                        $params = $url[1];
+                                        $finalurl = $controllers;
+                                    }else if(count($url) >2){
+                                        $finalurl = 'home';
+                                    }else{
+                                        $finalurl = $controllers;
+                                    }
+                                    echo " var friendlyurl = ['".$controllers."'];";
+                                }else{
+                                    $final = 'home';
+                                    echo " var friendlyurl = ['home'];";
+                                 }
+
+                                }else{
+                                    echo " var friendlyurl = ['home'];";
                                 }
-                            }else{
-                                $newurl[] = ['home'];
-                            }
-                            echo " var friendlyurl = ['".$controllers."']";
-                            
-                        }else{
-                            $newurl[] = ['home'];
-                            echo " var friendlyurl = ['home']";
-                        };
-                        
-                    ?>;
+                    ?>
                         $(document).ready(function(){
                         $('html').attr('device','<?php echo $device ?>');
                         //console.log(friendlyurl);
