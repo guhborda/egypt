@@ -94,10 +94,22 @@ html[device="pc"] .app{
   }
   
   html[device="mobile"] .fixed-action-btn ul.active , html[device="mobile"] .fixed-action-btn ul{
-    width: 85px !important;
     position: absolute !important;
-    right: 0 !important;
-    bottom: 80px;
+    right: 10px !important;
+    bottom: 0px;
     left: unset !important;
     height: 300px !important;
+  }
+  html[device="mobile"] .fixed-action-btn ul li{
+    margin-right: 0 !important;
+  align-content: center;
+    align-items: center;
+  }
+
+  .popFloating{
+    background-color: white;
+    /* width: 100%; */
+    box-shadow: 1px 1px 1px 0.5;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
   }
