@@ -6,8 +6,8 @@ function mobileView($params){
     include('../public/components/sidenav.php');
     include('../public/view/home.view.php');
     ?>
-    <div class="fixed-action-btn" style="height:110px; bottom: 10px; right: 10px;">
-    <a class=" btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a>
+    <div class="fixed-action-btn" style="bottom: 0px; right: 10px;">
+    <a class="btnFlutuante btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a>
       <ul class="list-unstyled">
         <li><a class="btn-floating red"><i class="fas fa-star"></i></a></li>
         <li><a class="btn-floating yellow darken-1"><i class="fas fa-user"></i></a></li>
