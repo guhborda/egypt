@@ -97,6 +97,7 @@ $(document).ready(function() {
 </script>
 
 <style>
+  
   html[device="mobile"] #slide-out{
     z-index: 999999;
     }
@@ -113,5 +114,14 @@ $(document).ready(function() {
         margin-top: 5px;
 
     }
+
+
+      @media (min-width: 1441px){
+        html[device="pc"] #rootContent{
+          padding-left: 240px;
+
+        }
+      }
+
 </style>
 </header>
