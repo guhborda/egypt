@@ -15,3 +15,20 @@
     }
 
     
+//Funcionalidades
+function cadastrarCartao(data){
+  console.log(data);
+}
+
+function cadastrarReceita(){
+
+}
+
+function cadastrarDespesa(){
+
+}
+
+function cadastrarPapel(){
+
+}
+

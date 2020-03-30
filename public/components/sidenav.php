@@ -1,4 +1,4 @@
-<header>
+
 <!-- SideNav slide-out button -->
 <!-- SideNav slide-out button -->
  <!-- Sidebar navigation -->
@@ -21,21 +21,12 @@
           </ul>
         </li>
         <!--/Social-->
-        <!--Search Form-->
-        <li>
-          <form class="search-form" role="search">
-            <div class="form-group md-form mt-0 pt-1 waves-light">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-          </form>
-        </li>
-        <!--/.Search Form-->
         <!-- Side navigation links -->
         <li>
           <ul class="collapsible collapsible-accordion">
-            <li><a href="home" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Dashboard</a>
+            <li><a href="home" class="collapsible-header waves-effect arrow-r">Dashboard</a>
             </li>
-            <li><a href="cadastro" class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Cadastrar</a>
+            <li><a href="cadastro" class="collapsible-header waves-effect arrow-r"> Cadastrar</a>
             </li>
         <!--/. Side navigation links -->
       </ul>
@@ -60,12 +51,13 @@
           <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+          <a class="nav-link"><i class="fas fa-cash"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            <i class="fas fa-user"></i>
+            Minha Conta
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Action</a>
@@ -124,4 +116,3 @@ $(document).ready(function() {
       }
 
 </style>
-</header>

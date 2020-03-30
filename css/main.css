@@ -113,3 +113,12 @@ html[device="pc"] .app{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
   }
+
+  .side-nav .collapsible a{
+    font-size: 1.2em !important;
+    margin-bottom: 5px;
+  }
+
+  .side-nav .collapsible a{
+    text-align: left;
+  }
