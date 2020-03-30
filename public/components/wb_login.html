@@ -144,9 +144,7 @@ top: 0;">
               if(response.success == true){
 								$(location).attr('href','index.php');
 							}else{
-								$('.username, .senha').css({'border': '1px solid #00b388'});
-									$('.face.front #email, .face.front #senha').css({'border': '1px solid red'});
-									$('.username .input-group-addon,.senha .input-group-addon').css({'color': 'red'});
+									$('.face.front #email, .face.front #password').addClass('invalid');
                   $('.modal-body p').html('Usuário ou Senha incorreto');
                 $('#frameModalBottom').modal();
 								
