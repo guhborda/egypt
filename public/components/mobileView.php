@@ -41,16 +41,28 @@ function mobileView($params){
         var action = btn.attr('id');
         switch(action){
           case 'Receita':
-            cadastrarReceita(action);
+            cadastrarReceita(action).then(()=>{
+              $('.modal').removeClass('conteudo');
+              $('.modal-body p').html('');
+            });
           break;
           case 'Despesa':
-            cadastrarDespesa(action);
-          break;
-          case 'Papel':
-            cadastrarPapel(action);
+            cadastrarDespesa(action).then(()=>{
+              $('.modal').removeClass('conteudo');
+              $('.modal-body p').html('');
+            });
           break;
           case 'Cartao':
-            cadastrarCartao(action);
+            cadastrarCartao(action).then(()=>{
+              $('.modal').removeClass('conteudo');
+              $('.modal-body p').html('');
+            });
+          break;
+          case 'Papel':
+            cadastrarPapel(action).then(()=>{
+              $('.modal').removeClass('conteudo');
+              $('.modal-body p').html('');
+            });
           break;
           default:
           break;

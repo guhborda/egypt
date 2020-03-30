@@ -29,7 +29,6 @@
     </div>
 
         <script>
-            $('.modal').modal();
                     <?php 
                         if($_REQUEST){
 

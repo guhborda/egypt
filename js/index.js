@@ -17,21 +17,26 @@
     
 //Funcionalidades
 function cadastrarCartao(data){
-  alert(data);
+  $('.modal-body p').html(data);
+  $('.modal').addClass('conteudo');
+    $('#frameModalBottom').modal();
 }
 
 function cadastrarReceita(data){
-  alert(data);
+  $('.modal-body p').html(data);
+  $('.modal').addClass('conteudo');
+    $('#frameModalBottom').modal();
 }
 
 function cadastrarDespesa(data){
-  alert(data);
+  $('.modal-body p').html(data);
+  $('.modal').addClass('conteudo');
+    $('#frameModalBottom').modal();
 }
 
 function cadastrarPapel(data){
   $('.modal-body p').html(data);
-  sleep(1500).then(()=>{
+  $('.modal').addClass('conteudo');
     $('#frameModalBottom').modal();
-  });
 }
 
