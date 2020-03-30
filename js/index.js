@@ -17,18 +17,21 @@
     
 //Funcionalidades
 function cadastrarCartao(data){
-  console.log(data);
+  alert(data);
 }
 
-function cadastrarReceita(){
-
+function cadastrarReceita(data){
+  alert(data);
 }
 
-function cadastrarDespesa(){
-
+function cadastrarDespesa(data){
+  alert(data);
 }
 
-function cadastrarPapel(){
-
+function cadastrarPapel(data){
+  $('.modal-body p').html(data);
+  sleep(1500).then(()=>{
+    $('#frameModalBottom').modal();
+  });
 }
 
