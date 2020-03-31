@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="card" style="margin-top: 150px;">
+    <div class="card" style="margin-top: 100px;">
             <div class="card-header">Nova Receita</div>
-            <form action="" class="receitaForm" >
+            <form class="receitaForm" id="receitaForm">
                 <div class="card-body">
                 <div class="md-form">
                     <input type="text" class="form-control" id="title">
@@ -13,9 +13,9 @@
                 </div>  
                 <div class="md-form">
                     <input type="text" class="form-control" id="value">
-                    <label for="value">Valor</label>
+                    <label for="value">Valor R$</label>
                 </div>
-                <div class="md-form"><div class="btn btn-primary float-right" style="margin-bottom: 25px;">Salvar</div></div>
+                <div class="md-form"><input type="reset" class="btn" value="Limpar"><input class="btn btn-primary float-right" style="margin-bottom: 25px;" id="cadReceita" type="submit" value="Salvare"></div>
                 
                 </div>
             </form>
@@ -26,5 +26,20 @@
 <script>
 
 $('#value').mask('#.##0,00', {reverse: true});
+
+$('#receitaForm').submit(function(e){
+    e.preventDefault();
+    var titulo = $('#title').val();
+    var descricao = $('#description').val();
+    var valor = $('#value').val();
+    if(titulo == '' || valor  == ''){
+        $('.modal').removeClass('conteudo');
+        $('.modal-body p').html('Campo Titulo e/ou Valor não podem ser vazios');
+        $('.modal').modal();
+    }else{
+        alert(titulo+descricao+valor);
+    }
+    
+});
 
 </script>

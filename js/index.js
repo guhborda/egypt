@@ -40,3 +40,7 @@ function cadastrarPapel(data){
     $('#frameModalBottom').modal();
 }
 
+
+
+//Funcionalidades Paginas
+

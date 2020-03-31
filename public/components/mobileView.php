@@ -9,9 +9,9 @@ function mobileView($params){
     <div class="fixed-action-btn">
     <a class="btnFlutuante btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a>
       <ul class="list-unstyled">
-        <li ><span class="popFloating"> Cartão </span> <a href="" id="Papel" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
-        <li ><span class="popFloating"> Cartão </span> <a href="" id="Cartao" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
-        <li ><span class="popFloating"> Despesa </span><a href="" id="Despesa" class="floatBtn btn-floating red"><i class="fas fa-envelope"></i></a></li>
+        <li ><span class="popFloating"> Cartão </span> <a href="papel" id="Papel" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
+        <li ><span class="popFloating"> Cartão </span> <a href="cartao" id="Cartao" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
+        <li ><span class="popFloating"> Despesa </span><a href="despesa" id="Despesa" class="floatBtn btn-floating red"><i class="fas fa-envelope"></i></a></li>
         <li ><span class="popFloating"> Receita </span><a href="receita" id="Receita" class="floatBtn btn-floating blue"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
     </div>
