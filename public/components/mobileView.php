@@ -6,7 +6,7 @@ function mobileView($params){
     include('../public/components/sidenav.php');
     include('../public/view/home.view.php');
     ?>
-    <div class="fixed-action-btn" style="position:fixed">
+    <div class="fixed-action-btn">
     <a class="btnFlutuante btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a>
       <ul class="list-unstyled">
         <li ><span class="popFloating"> Cartão </span> <a href="" id="Papel" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
@@ -27,7 +27,7 @@ function mobileView($params){
                   $(".fixed-action-btn ul li a").addClass("shown");
                   btnstatus = 1;
               }else{
-                $(".fixed-action-btn").css('height','0px');
+                $(".fixed-action-btn").css('height','30px');
                 $(".fixed-action-btn").removeClass("active");
                 $(".fixed-action-btn ul li a").removeClass("shown");
                 btnstatus = 0;

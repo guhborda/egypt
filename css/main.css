@@ -82,7 +82,7 @@ html[device="pc"] .app{
     margin-bottom: 100px !important;
   }
   html[device="mobile"] .fixed-action-btn{
-    position: fixed !important;
+    height: 30px;
   }
 
   html[device="mobile"] .fixed-action-btn.active{
