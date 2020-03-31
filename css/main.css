@@ -82,7 +82,7 @@ html[device="pc"] .app{
     margin-bottom: 100px !important;
   }
   html[device="mobile"] .fixed-action-btn{
-    position: absolute !important;
+    position: fixed !important;
   }
 
   html[device="mobile"] .fixed-action-btn.active{
@@ -103,10 +103,10 @@ html[device="pc"] .app{
   }
   
   html[device="mobile"] .fixed-action-btn ul.active , html[device="mobile"] .fixed-action-btn ul{
-    position: absolute !important;
+    /* position: fixed !important;
     right: 10px !important;
     left: unset !important;
-    height: 300px !important;
+    height: 300px !important; */
   }
   html[device="mobile"] .fixed-action-btn ul li{
     margin-right: 0 !important;

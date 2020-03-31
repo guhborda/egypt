@@ -6,13 +6,13 @@ function mobileView($params){
     include('../public/components/sidenav.php');
     include('../public/view/home.view.php');
     ?>
-    <div class="fixed-action-btn" style="bottom: 0px; right: 10px;">
+    <div class="fixed-action-btn" style="position:fixed">
     <a class="btnFlutuante btn-floating btn-lg btn-default"><i class="fas fa-bolt"></i></a>
       <ul class="list-unstyled">
         <li ><span class="popFloating"> Cartão </span> <a href="" id="Papel" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
         <li ><span class="popFloating"> Cartão </span> <a href="" id="Cartao" class="floatBtn btn-floating purple darken-1"><i class="fas fa-user"></i></a></li>
         <li ><span class="popFloating"> Despesa </span><a href="" id="Despesa" class="floatBtn btn-floating red"><i class="fas fa-envelope"></i></a></li>
-        <li ><span class="popFloating"> Receita </span><a href="" id="Receita" class="floatBtn btn-floating blue"><i class="fas fa-shopping-cart"></i></a></li>
+        <li ><span class="popFloating"> Receita </span><a href="receita" id="Receita" class="floatBtn btn-floating blue"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
     </div>
       <script>
@@ -27,47 +27,47 @@ function mobileView($params){
                   $(".fixed-action-btn ul li a").addClass("shown");
                   btnstatus = 1;
               }else{
-                $(".fixed-action-btn").css('height','110px');
+                $(".fixed-action-btn").css('height','0px');
                 $(".fixed-action-btn").removeClass("active");
                 $(".fixed-action-btn ul li a").removeClass("shown");
                 btnstatus = 0;
               }
           });
           
-      $('.floatBtn.btn-floating').click(function(e){
-        e.preventDefault();
-        var btn = $(this);
-        //console.log(btn);
-        var action = btn.attr('id');
-        switch(action){
-          case 'Receita':
-            cadastrarReceita(action).then(()=>{
-              $('.modal').removeClass('conteudo');
-              $('.modal-body p').html('');
-            });
-          break;
-          case 'Despesa':
-            cadastrarDespesa(action).then(()=>{
-              $('.modal').removeClass('conteudo');
-              $('.modal-body p').html('');
-            });
-          break;
-          case 'Cartao':
-            cadastrarCartao(action).then(()=>{
-              $('.modal').removeClass('conteudo');
-              $('.modal-body p').html('');
-            });
-          break;
-          case 'Papel':
-            cadastrarPapel(action).then(()=>{
-              $('.modal').removeClass('conteudo');
-              $('.modal-body p').html('');
-            });
-          break;
-          default:
-          break;
-        }
-      });
+          // $('.floatBtn.btn-floating').click(function(e){
+          //   e.preventDefault();
+          //   var btn = $(this);
+          //   //console.log(btn);
+          //   var action = btn.attr('id');
+          //   switch(action){
+          //     case 'Receita':
+          //       cadastrarReceita(action).then(()=>{
+          //         $('.modal').removeClass('conteudo');
+          //         $('.modal-body p').html('');
+          //       });
+          //     break;
+          //     case 'Despesa':
+          //       cadastrarDespesa(action).then(()=>{
+          //         $('.modal').removeClass('conteudo');
+          //         $('.modal-body p').html('');
+          //       });
+          //     break;
+          //     case 'Cartao':
+          //       cadastrarCartao(action).then(()=>{
+          //         $('.modal').removeClass('conteudo');
+          //         $('.modal-body p').html('');
+          //       });
+          //     break;
+          //     case 'Papel':
+          //       cadastrarPapel(action).then(()=>{
+          //         $('.modal').removeClass('conteudo');
+          //         $('.modal-body p').html('');
+          //       });
+          //     break;
+          //     default:
+          //     break;
+          //   }
+          // });
           
         });
         </script>
