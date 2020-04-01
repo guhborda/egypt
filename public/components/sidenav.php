@@ -34,7 +34,17 @@
           <ul class="collapsible collapsible-accordion">
             <li><a href="home" class="collapsible-header waves-effect arrow-r">Dashboard</a>
             </li>
-            <li><a href="cadastro" class="collapsible-header waves-effect arrow-r"> Cadastrar</a>
+            <li class="btndropdown"><a class="collapsible-header waves-effect arrow-r"> Cadastrar<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+                <ul>
+                  <li><a href="cadastro" class="waves-effect">
+                      <span class="sv-normal">Cadastro</span></a>
+                  </li>
+                  <li><a href="#" class="waves-effect">
+                      <span class="sv-normal">Write a message</span></a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li><a href="receita" class="collapsible-header waves-effect arrow-r"> Receita</a>
             </li>
@@ -90,12 +100,30 @@
 <script>
 
 $(document).ready(function() {
+    var drop = 0;
+    $('.btndropdown').click(function(){
+      if(drop == 0){
+      $('.btndropdown').toggleClass('active');
+      $('.btndropdown a').toggleClass('active');
+      $('.btndropdown div.collapsible-body').css('display','block');
+      drop =1;
+      }else{
+        $('.btndropdown').toggleClass('active');
+        $('.btndropdown a').toggleClass('active');
+        $('.btndropdown div.collapsible-body').css('display','none');
+        drop = 0;
+      }
+    });
 
     $(".button-collapse").sideNav();
     // SideNav Button Initialization
     // SideNav Scrollbar Initialization
     // var sideNavScrollbar = document.querySelector('.custom-scrollbar');
     // var ps = new PerfectScrollbar(sideNavScrollbar);
+
+
+
+
 });
 
 </script>
