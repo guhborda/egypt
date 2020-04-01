@@ -43,6 +43,7 @@ $('#receitaForm').submit(function(e){
         $('.modal').modal();
     }else{
         alert(titulo+descricao+valor);
+        $('#receitaForm')[0].reset();
     }
     
 });

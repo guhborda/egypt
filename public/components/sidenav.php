@@ -2,12 +2,20 @@
 <!-- SideNav slide-out button -->
 <!-- SideNav slide-out button -->
  <!-- Sidebar navigation -->
- <div id="slide-out" class="side-nav blue fixed">
+ <div id="slide-out" class="side-nav fixed">
       <ul class="custom-scrollbar">
         <!-- Logo -->
         <li>
-          <div class="logo-wrapper waves-light">
-            <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+          <div class="logo-wrapper waves-light" style="border-bottom: none;">
+            <a href="#" style="top: 10px;
+    position: relative;"><img src="images/icons/icon-72x72.png" class="" style="left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 3px 7px 5px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding:0;
+    "></a>
           </div>
         </li>
         <!--/. Logo -->
@@ -28,6 +36,10 @@
             </li>
             <li><a href="cadastro" class="collapsible-header waves-effect arrow-r"> Cadastrar</a>
             </li>
+            <li><a href="receita" class="collapsible-header waves-effect arrow-r"> Receita</a>
+            </li>
+            <li><a href="despesa" class="collapsible-header waves-effect arrow-r"> Despesa</a>
+            </li>
         <!--/. Side navigation links -->
       </ul>
       <div class="sidenav-bg mask-strong"></div>
@@ -41,7 +53,7 @@
       </div>
       <!-- Breadcrumb-->
       <div class="breadcrumb-dn mr-auto LogoTitle">
-        <p>Material Design for Bootstrap</p>
+        <p>Finance</p>
       </div>
       <ul class="nav navbar-nav nav-flex-icons ml-auto">
         <li class="nav-item">
@@ -87,7 +99,6 @@ $(document).ready(function() {
 });
 
 </script>
-
 <style>
   
   html[device="mobile"] #slide-out{

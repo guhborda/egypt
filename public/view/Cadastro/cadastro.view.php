@@ -5,6 +5,7 @@ if($auth){
 Oi olha como eu estou na Cadastro
 <div class="btn" onClick="cadastrar('oloco')">Cadastrar</div>
 <script>
+
     function cadastrar(params){
         $.ajax({
             url: 'functions/Painel.func.php',

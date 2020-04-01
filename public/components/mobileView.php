@@ -19,6 +19,9 @@ function mobileView($params){
       <script>
         $(document).ready(function(){
             $('body').attr('device','smartphoneview');
+            $('body').attr('page','<?=ucfirst($params)?>');
+            var page = $('body').attr('page');
+            $('.smp_Title').html(page);
             $("#rootContent").load('public/view/<?=ucfirst($params)?>/<?=$params?>.view.php');
             var btnstatus = 0;
           $('.fixed-action-btn').click(function(){
