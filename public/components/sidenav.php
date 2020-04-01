@@ -40,12 +40,12 @@
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
       </div>
       <!-- Breadcrumb-->
-      <div class="breadcrumb-dn mr-auto">
+      <div class="breadcrumb-dn mr-auto LogoTitle">
         <p>Material Design for Bootstrap</p>
       </div>
       <ul class="nav navbar-nav nav-flex-icons ml-auto">
         <li class="nav-item">
-          <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+          <a class="nav-link" href="receita"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>

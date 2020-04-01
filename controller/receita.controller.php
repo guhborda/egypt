@@ -1,7 +1,7 @@
 <?php
-
 namespace controller;
 include '../config.php';
+if($auth){
 include '../public/components/mobileView.php';
 include '../public/components/webView.php';
 
@@ -10,6 +10,8 @@ include '../public/components/webView.php';
   }else{
     webView('receita');
   }
-
+}else{
+  header("location: ../index.php");
+}
 
 ?>

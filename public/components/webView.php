@@ -1,6 +1,6 @@
 <?php
+if($auth){
 function webView($params){
-  //var_dump($data);
   include('../public/components/sidenav.php');
   include("../public/view/home.view.php");
   ?>
@@ -15,4 +15,7 @@ function webView($params){
   </script>
   <?php
   }
+}else{
+  header("location: ../index.php");
+}
   ?>

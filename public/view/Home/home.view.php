@@ -1,3 +1,7 @@
+<?php
+include '../../../config.php';
+if($auth){
+?>
 <div class="container">
   <div class="flex home">
 </div>
@@ -27,3 +31,11 @@
 
     })
 </script>
+
+<?php
+
+}else{
+    header("location: ../../../index.php");
+}
+
+?>

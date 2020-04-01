@@ -1,3 +1,7 @@
+<?php
+include "../../../config.php";
+if($auth){
+?>
 Oi olha como eu estou na Cadastro
 <div class="btn" onClick="cadastrar('oloco')">Cadastrar</div>
 <script>
@@ -16,3 +20,9 @@ Oi olha como eu estou na Cadastro
 }
 
 </script>
+
+<?php
+}else{
+    header("location: ../../../index.php");
+}
+?>

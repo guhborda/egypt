@@ -102,12 +102,12 @@ html[device="pc"] .app{
     position: fixed;
   }
   
-  html[device="mobile"] .fixed-action-btn ul.active , html[device="mobile"] .fixed-action-btn ul{
+  /* html[device="mobile"] .fixed-action-btn ul.active , html[device="mobile"] .fixed-action-btn ul{ */
     /* position: fixed !important;
     right: 10px !important;
     left: unset !important;
     height: 300px !important; */
-  }
+  /* } */
   html[device="mobile"] .fixed-action-btn ul li{
     margin-right: 0 !important;
   align-content: center;
@@ -129,4 +129,14 @@ html[device="pc"] .app{
 
   .side-nav .collapsible a{
     text-align: left;
+  }
+
+  @media (min-width: 1441px){
+
+    html[device="pc"] .LogoTitle{
+      margin-right: unset;
+      margin-left: 230px !important;
+
+    }
+
   }

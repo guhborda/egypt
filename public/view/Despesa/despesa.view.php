@@ -1,12 +1,11 @@
 <?php
-
 include "../../../config.php";
 if($auth){
 ?>
 <div class="container">
     <div class="card" style="margin-top: 100px;">
-            <div class="card-header">Nova Receita</div>
-            <form class="receitaForm" id="receitaForm">
+            <div class="card-header">Nova Despesa</div>
+            <form class="despesaForm" id="despesaForm">
                 <div class="card-body">
                 <div class="md-form">
                     <input type="text" class="form-control" id="title">
@@ -32,7 +31,7 @@ if($auth){
 
 $('#value').mask('#.##0,00', {reverse: true});
 
-$('#receitaForm').submit(function(e){
+$('#despesaForm').submit(function(e){
     e.preventDefault();
     var titulo = $('#title').val();
     var descricao = $('#description').val();

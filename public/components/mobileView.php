@@ -1,4 +1,5 @@
 <?php
+if($auth){
 function mobileView($params){
     
     //echo __DIR__;
@@ -75,4 +76,8 @@ function mobileView($params){
     //var_dump($data);
     //include('public/components/openPost.html');
   }
+
+}else{
+  header("location: ../index.php");
+}
   ?>
