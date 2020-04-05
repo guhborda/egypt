@@ -53,16 +53,19 @@ today: 'Hoje',
 clear: 'Limpar',
 formatSubmit: 'dd/mm/yyyy'
 });
-$('.chk_recorrencia').on('change',function(){
+
+var checkboxElement = document.querySelector('.chk_recorrencia');
+checkboxElement.addEventListener('change',
+function(){
     var recorrencia = $('.chk_recorrencia');
     console.log(recorrencia[0].checked);
-if(recorrencia[0].checked == true){
-    $('#datapicker').removeClass('dtpickerhide');
-    $('#datapicker').addClass('datapicker');
-}else{
-    $('#datapicker').addClass('dtpickerhide');
-    $('#datapicker').removeClass('datapicker');
-}
+        if(recorrencia[0].checked == true){
+            $('#datapicker').removeClass('dtpickerhide');
+            $('#datapicker').addClass('datapicker');
+        }else{
+        $('#datapicker').addClass('dtpickerhide');
+        $('#datapicker').removeClass('datapicker');
+    }
 });
 
 
