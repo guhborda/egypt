@@ -8,6 +8,10 @@ $options=['listarcliente','Inserir cliente','excluir','transferir','sair'];
 $response=array();
 switch($_POST['Painel']){
 
+    case 'CadastrarReceita':
+        
+    break;
+
     case 'Inserircliente':
         
     if(isset($_POST['value'])){

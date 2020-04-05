@@ -15,7 +15,20 @@ if($auth){
                 <div class="md-form">
                     <input type="text" class="form-control" id="description">
                     <label for="description">Descrição</label>
-                </div>  
+                </div>
+
+                <!-- checkbox recorrencia -->
+                    <div class="form-check ">
+                        <input type="checkbox" class="form-check-input chk_recorrencia" id="materialUnchecked">
+                        <label class="form-check-label" for="materialUnchecked">Material unchecked</label>
+                    </div>
+                
+                <!-- dataPicker -->
+
+                <div class="md-form dtpickhide" id="datapicker">
+                    <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+                </div>
+                <!-- datapicker -->
                 <div class="md-form">
                     <input type="text" class="form-control" id="value">
                     <label for="value">Valor R$</label>
@@ -23,6 +36,8 @@ if($auth){
                 <div class="md-form"><input type="reset" class="btn" value="Limpar"><input class="btn btn-primary float-right" style="margin-bottom: 25px;" id="cadReceita" type="submit" value="Salvare"></div>
                 
                 </div>
+                
+
             </form>
         
     </div>    
@@ -30,8 +45,22 @@ if($auth){
 
 <script>
 
-$('#value').mask('#.##0,00', {reverse: true});
+$('.datepicker').pickadate();
+$('.chk_recorrencia').on('change',function(){
+    var recorrencia = $('.chk_recorrencia');
+    console.log(recorrencia[0].checked);
+if(recorrencia[0].checked == true){
+    $('#datapicker').removeClass('dtpickerhide');
+    $('#datapicker').addClass('datapicker');
+}else{
+    $('#datapicker').addClass('dtpickerhide');
+    $('#datapicker').removeClass('datapicker');
+}
+});
 
+
+$('#value').mask('#.##0,00', {reverse: true});
+$('#data-picker-example').mask('00/00/0000');
 $('#receitaForm').submit(function(e){
     e.preventDefault();
     var titulo = $('#title').val();
