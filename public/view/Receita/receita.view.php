@@ -45,7 +45,14 @@ if($auth){
 
 <script>
 
-$('.datepicker').pickadate();
+$('.datepicker').pickadate({
+monthsFull: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro',
+'Novembro', 'Dezembro'],
+weekdaysShort: ['Seg', 'Ter', 'Quar', 'Quin', 'Sex', 'Sab', 'Dom'],
+today: 'Hoje',
+clear: 'Limpar',
+formatSubmit: 'dd/mm/yyyy'
+});
 $('.chk_recorrencia').on('change',function(){
     var recorrencia = $('.chk_recorrencia');
     console.log(recorrencia[0].checked);
